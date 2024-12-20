@@ -1,0 +1,930 @@
+doctype html
+- var page = 'index'
+- var keywords = 'フュージョン、エレクトロニカ、アンビエント、ミュージック・コンクレート ニューエイジ、ヒーリングミュージック、ジャズ、ボサノヴァ、クラッシック、クラシカル、インストゥルメンタル、ポストクラシカル、チルアウト（Chill Out）ネオクラシカル、ロック、ジャズ、アヴァンギャルド、アコースティック'
+- var description = 'NEXTVIEW Labels is Japans first label dedicated to post-classical music and is committed to creating innovative works that transcend traditional genres.'
+- var title = 'ＮＥＸＴＶＩＥＷ Labels'
+html(lang='ja')
+  include inc/_head
+  body
+    .top_all_wrapper
+      .wrapper_top_sp_wrapper
+        .wrapper_top
+          //オープニングアニメーション
+          #content
+          //-#loader
+            img#logo(src='/assets/images/logo_op.png' alt='')
+          header.header
+            a.header_logo(href='/')
+              img.pc(src='/assets/images/header_logo.png' alt='NEXTVIEWLabels')
+              img.sp(src='/assets/images/header_logo_sp.png' alt='NEXTVIEWLabels')
+            //-#hamburger.hamburger
+              img.hamburger-icon(src='/assets/images/hamburger_icon.png' alt='メニューボタン')
+              img.close-icon(src='/assets/images/close_icon.png' alt='閉じる')
+            #hamburger.hamburger
+              span.bar
+              span.bar
+              span.bar
+            nav#nav-links.nav-links
+              ul
+                li
+                  a(href='#aboutus') About us
+                li
+                  a(href='#artist') Artist
+                li
+                  a(href='#message') Message
+                li
+                  a(href='#news') News
+                //-li
+                  a(href='#home') DISCOGRAPHY
+                li
+                  a(href='#corporateprofile') Corporate profile
+                li
+                  a(href='#contact') Contact
+              .header_link_active
+                .link_area_wrapper
+                  a(href="" target="_blank")
+                    img.pc(src="/assets/images/icon_facebook.png", alt="facebook")
+                    img.sp(src="/assets/images/icon_facebook_sp.png", alt="facebook")
+                  a(href="" target="_blank")
+                    //-img(src="/assets/images/icon_instagram.png", alt="Instagram")
+                    img.pc(src="/assets/images/icon_instagram.png", alt="")
+                    img.sp(src="/assets/images/icon_instagram_sp.png", alt="")
+              button.close-menu(type='button') close
+          //-.mv_top_sp
+          .mv_top 
+            h1.logo
+              img(src="/assets/images/logo.png", alt="NEXTVIEWLabels")
+      .section_wrapper
+      .mv_wrapper
+        .mv
+          //-h2.top_ttl LIVE SCHEDULE
+          .slider_wrapper
+            .slider
+              .contents_wrapper.section-schedule_contents_wrapper
+                .schedule_pic
+                  img.pc(src="/assets/images/mv_pic01.jpg", alt="")
+                  img.sp(src="/assets/images/mv_pic01_sp.jpg", alt="")
+              .contents_wrapper.section-schedule_contents_wrapper
+                .schedule_pic
+                  img.pc(src="/assets/images/mv_pic02.jpg", alt="")
+                  img.sp(src="/assets/images/mv_pic02_sp.jpg", alt="")
+              .contents_wrapper.section-schedule_contents_wrapper
+                .schedule_pic
+                  img.pc(src="/assets/images/mv_pic03.jpg", alt="")
+                  img.sp(src="/assets/images/mv_pic03_sp.jpg", alt="")
+            .dots_box
+      .about_wrapper
+        section.about#aboutus
+          h2.top_ttl About us
+          .section_contents_wrapper
+            .aboutus_textarea
+              p.about_text01_en <span class="ls_01">NEXTVIEW</span> Labels is dedicated to breathing new life into classical music, focusing on the ambient, chill, and post-classical genres. While we hold traditional classical music in high regard, we’re not afraid to push its boundaries, constantly striving to create innovative and fresh musical styles. Our roster at <span class="ls_01">NEXTVIEW</span> Labels consists of artists who are deeply passionate and committed to their craft. Together, we aim to share our music and the emotions it evokes with audiences worldwide, creating lasting connections that endure… now and always.
+              p.about_text01_jp <span class="ls_01">NEXTVIEW</span> Labelsは、<br>アンビエントで、チルな、ポストクラシカルという音楽ジャンルの中に、クラシック音楽の新しい魅力を創り出そうと思う。<br>伝統的なクラシック音楽をリスペクトしつつ…….しかし、一方でそれを否定しつつ、革新的で、新しいスタイルの音楽を生み出そうと思う。<br><span class="about_text01_jp_block02"><span class="ls_01">NEXTVIEW</span> Labelsには、音楽に対する強い執着心と情熱を持ったアーティスト達が集まっている…..<br>そんな彼（彼女）らと共に、世界中の人々に、思いを込めて音楽を翳そうと思う…..<br>いつまでも…..いつまでも。</span>
+      //-.video_wrapper02
+        section#video.section-video
+          h2.top_ttl VIDEO
+          .video_wrapper 
+            iframe(src='https://www.youtube.com/embed/SBB1JeA-PaE?si=J3ahVTqvyQYwU0ox' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share' referrerpolicy='strict-origin-when-cross-origin' allowfullscreen)
+      .artist_wrapper
+        section.section-artist#artist
+          h2.top_ttl.topttl_inline Artist
+          .contents_wrapper.section-artist_contents_wrapper
+            // Artist Area 1
+            .artist_area
+              .artist_pic.artist_pic01(data-modal="modal1")
+                img(src="/assets/images/artist_pic01.png", alt="TIME")
+              .artist_textarea
+                p.artist_text01 N nulls <span class="slash">/</span><br class="sp"> Shuwa Nagai
+
+            // Artist Area 2
+            .artist_area
+              .artist_pic.artist_pic02(data-modal="modal2")
+                img(src="/assets/images/artist_pic02.png", alt="ハイウェイ - Single (digital release)")
+              .artist_textarea
+                p.artist_text01 N nulls <span class="slash">/</span> <br class="sp">Kyotaro Sawamura
+            // Artist Area 3
+            .artist_area
+              .artist_pic.artist_pic03(data-modal="modal3")
+                img(src="/assets/images/artist_pic03.png", alt="ハイウェイ - Single (digital release)")
+              .artist_textarea
+                p.artist_text01 THY
+            // Artist Area 4
+            .artist_area
+              .artist_pic.artist_pic04(data-modal="modal4")
+                img(src="/assets/images/artist_pic04.png", alt="ハイウェイ - Single (digital release)")
+              .artist_textarea
+                p.artist_text01 Ken and 7 <span class="slash">/</span><br class="sp"> Kenshiro Matsuo
+            // Artist Area 5
+            .artist_area.artist_area_last
+              .artist_pic.artist_pic05(data-modal="modal5")
+                img(src="/assets/images/artist_pic05.png", alt="ハイウェイ - Single (digital release)")
+              .artist_textarea
+                p.artist_text01 Taichi Chishaki
+            // Modal 1
+            .modal#modal1
+              button.modal_close.close_top 
+                img.sp(src="/assets/images/icon_close_sp.png", alt="")
+              .modal_content
+                button.modal_close.close_top.close_top_pc
+                  img.pc(src="/assets/images/icon_close.png", alt="")
+                .modal_body
+                  .modal_profile_detail 
+                    .modal_profile_pic01 
+                      img(src="/assets/images/artist_pic01_color.png", alt="")
+                    .modal_self_introduction_wrapper
+                      .modal_self_introduction
+                        p.modal_company_name N nulls
+                        p.modal_name_en Shuwa Nagai 
+                        p.modal_name_jp 永井 秀和
+                        .modal_profile_linkarea 
+                          .modal_icon
+                            a(href="" target="_blank") 
+                              img.pc(src="/assets/images/icon_web.png", alt="")
+                              img.sp(src="/assets/images/icon_web_sp.png", alt="")
+                          .modal_icon
+                            a(href="" target="_blank") 
+                              img.pc(src="/assets/images/icon_x.png", alt="")
+                              img.sp(src="/assets/images/icon_x_sp.png", alt="")
+                          .modal_icon
+                            a(href="" target="_blank") 
+                              img.pc(src="/assets/images/icon_instagram.png", alt="")
+                              img.sp(src="/assets/images/icon_instagram_sp.png", alt="")
+                          .modal_icon
+                            a(href="" target="_blank") 
+                              img.pc(src="/assets/images/icon_facebook.png", alt="")
+                              img.sp(src="/assets/images/icon_facebook_sp.png", alt="")
+                  .modal_textarea 
+                    .modal_textarea_en_wrapper 
+                      p.modal_profile_ttl_en Profile
+                      p.modal_profile_text_en Born in Kanagawa, Japan. In 2017, he graduated from the Department of Composition, Faculty of Music at Tokyo University of the Arts.
+                        br
+                        | While in high school, he won second prize in the 12th TIAA All Japan Composition Competition [Solo Division] (no one qualified for first prize).
+                        br
+                        | In 2015, he provided music for “Seimei Ryoku No Odoriba(Dancing Ground of Vitality) vol. 2 - Mori No Ongakusai (Forest Music Festival)-” organized by Kitagawara Lab of Tokyo University of the Arts Graduate School of Music.
+                        br
+                        | Presented an orchestral piece in “PLANET TERRA YOUTH ORCHESTRA” organized by PLANET-TERRA, a general incorporated association.
+                        br
+                        | Composed music for “Geidai Arts Special 2015: Disability and Arts Music Theatre ‘Hoshi Ga Hikaru Toki (When the Stars Shine)’” organized by Tokyo University of the Arts.
+                        br
+                        | Composed music for the 3rd graduation project “Sawanobori” at the Japan Institute of the Moving Image in 2016.
+                        br
+                        | In 2017, he held a solo exhibition concert “Nagai Shuwa No Sekai (The World of Shuwa Nagai) 1st Concert”.
+                        br
+                        | Performed a new piece at the dam concert held at the Kura-no-uchi Dam in Shinbata City, organized by “Dam wo Kanaderu Kai” (Society to Recite the Dam).
+                        br
+                        | Composed music for “Small Theater Opera: Izumo no Okuni” organized by the Camerata project.
+                        br
+                        | Since 2017, he has been in charge of arranging school songs for a project sponsored by the Agency for Cultural Affairs, “Nurturing Children through Arts and Culture” by the Tokyo Philharmonic Orchestra.
+                        br
+                        | Music director of “Aru Nihon No Ekaki Shounen (A Japanese Painter Boy)” which received numerous awards, including the Runner-up Grand Prix and Gemstone Award Winner at the PFF Awards 2018.
+                        br
+                        | Since 2018, he has participated as an arranger in “Tales of Orchestra Concert 2018” organized by Bandai Namco Entertainment/Warner Music Japan.
+                        br
+                        | In the same year, he participated in “Hatsune Miku Symphony 2018-2019” organized by Warner Music Japan as an arranger.
+                        br
+                        | In 2019, he formed “N nulls”, a project that aims to reweave traditional Japanese music in more accessible ways while offering a brand new worldview that goes beyond the framework of classical music. Their music was made available on various streaming websites.
+                        br
+                        | In 2020, under the auspices of Arts Innovator Japan, Inc., he arranged the orchestrations for “Uchi de Odorou(Dancing on the Inside)” by Gen Hoshino and “Hoshikage no Yell” by GReeeeN which became a major trend during the declared state of emergency.
+                        br
+                        | Directed the music for the web commercial commemorating the release of “Frieren: Beyond Journey’s End Vol. 5” released in 2021.
+                        br
+                        | In December of the same year, he composed the entire act of the opera “Box” organized by Space Imagination Oto as a project adopted by ARTS of the future!
+                        br
+                        | From 2023, he participated in “Yuya Tegoshi Symphonic Concert 2023” Vol.1 & Vol.2 as an arranger.
+                        br
+                        | Since 2017, he has been the pianist for the band “Yuranfune” formed by Itaru Uchimura, a singer-songwriter who interprets classic rock, folk, and country music in his unique way and delivers original quality music to the audience.
+                        br
+                        | In addition to providing music for numerous concerts and videos, he also participates in ensembles as a pianist. He is musically active beyond genres with his unique style.
+                        br
+                        | He produces designs and has been producing the manga “Gakuman” (pseudonym: Eskom), a bimonthly comic strip, since the September 2016 issue of Piano Monthly. Currently, he pursues activities beyond the framework of music.
+                        br
+                        | He has studied composition under Miwa Okusada, Hidehiko Hinohara, and Tatsuya Hayashi, solfège under Fumiko Kubota and Yasuko Hikita, and piano under Noriko Ishiguro and Yoshihiro Ota.
+                    .modal_textarea_jp_wrapper
+                      p.modal_profile_ttl_jp プロフィール
+                      p.modal_profile_text_jp 神奈川県出身。2017年に東京藝術大学音楽学部作曲科卒業。
+                        br
+                        | 高校在学中、第12回TIAA全日本作曲コンクール【ソロ部門】第2位入賞（1位該当者なし）。
+                        br
+                        | 2015年、東京藝術大学院北川原研究室主催「生命力の踊り場vol.2―杜の音楽祭―」に楽曲提供。
+                        br
+                        | 一般社団法人PLANET-TERRA主催「PLANET TERRA YOUTH ORCHESTRA」にてオーケストラ作品を発表。
+                        br
+                        | 東京藝術大学主催「藝大アーツスペシャル2015 障がいとアーツ 音楽劇”星がひかるとき”」作曲担当。
+                        br
+                        | 28年度日本映画大学 第3回 卒業制作「沢のぼり」作曲担当。
+                        br
+                        | 2017年、個展演奏会「ナガイシュウワの世界 1st Concert」を開催。
+                        br
+                        | 「ダムを奏でる会」主催、新発田市の倉の内ダムで行われたダムコンサートにて楽曲を発表。
+                        br
+                        | Camerata project主催「小劇場オペラ 《出雲阿国》」音楽担当。
+                        br
+                        | 2017年より東京フィルハーモニー交響楽団による文化庁主催事業『文化芸術による子供の育成事業』にて校歌の編曲を担当。
+                        br
+                        | PFFアワード2018にて準グランプリ・ジェムストーン賞をW受賞するなど、数多くの賞を受賞している『ある日本の絵描き少年』の音楽監督を務める。
+                        br
+                        | 2018年より、バンダイナムコエンターテインメント/ワーナーミュージック・ジャパン主催の「テイルズオブオーケストラコンサート2018」に編曲家として参加。
+                        br
+                        | 同年、ワーナーミュージック・ジャパン主催の「初音ミクシンフォニー2018-2019」に編曲家として参加。
+                        br
+                        | 2019年より、日本の伝統的な楽曲を親しみやすく編み直すことをコンセプトにしながら、クラシックの枠にとらわれない新しい世界観を世界に向けて発信するプロジェクト”N nulls”結成、各ストリーミングサイトにて配信を開始。
+                        br
+                        | 2020年、株式会社アーツイノベーター・ジャパン企画の元、緊急事態宣言下に置いて一大ムーブメントとなった星野源氏の「うちで踊ろう」やGreeeeNの「星影のエール」のオーケストラアレンジを務める。
+                        br
+                        | 2021年に公開されたWebCM『葬送のフリーレン』5巻発売記念ムービーの音楽を担当。
+                        br
+                        | 同年12月、ARTS of the future!採択事業として、空間想像Oto主催のオペラ《箱》の全幕作曲を務める。
+                        br
+                        | 2023年より、『手越祐也シンフォニックコンサート2023』vol.1&vol.2にアレンジャーとして参加。
+                        br
+                        | 2017年より、古き良きロック、フォークやカントリーなどを独自に解釈しストレンジなグッドミュージックを届けるシンガーソングライター、内村イタルを中心に結成されたバンド「ゆうらん船」のピアノを担当。
+                        br
+                        | その他、数多くの演奏会や映像に楽曲提供をする傍ら、ピアニストとしてアンサンブルに参加。独自の作風で、ジャンルに拘らない音楽活動をしている。
+                        br
+                        | また、デザインの製作や、月刊ピアノ2016年9月号より漫画「学マン」を隔月連載中(ペンネーム：エスコム)。音楽の枠を超えた活動も行なっている。
+                        br
+                        | これまでに作曲を奥定美和、日野原秀彦、林達也の各氏に、ソルフェージュを久保田文子、疋田安子の各氏に、ピアノを石黒典子、大田佳弘の各氏に師事。
+                    .modal_release_wrapper
+                      p.modal_release_ttl Release
+                      .release_area
+                        .album_wrapper
+                          .album 
+                            img(src="/assets/images/album/01_far_away.png", alt="")
+                          p.album_ttl Far away
+                          .albam_link 
+                            .albam_link_icon 
+                              a(href="https://open.spotify.com/playlist/6bvazyItouIlM0kKHjKU0R?si=0709d28911704c1f" target="_blank")
+                                img.pc(src="/assets/images/album/icon_spotify.png", alt="Spotify")
+                                img.sp(src="/assets/images/album/icon_spotify.png", alt="Spotify")
+                            .albam_link_icon 
+                              a(href="https://music.apple.com/jp/artist/n-nulls/1476029519/see-all?section=singles" target="_blank")
+                                img(src="/assets/images/album/icon_applemusic.png", alt="AppleMusic")
+                        .album_wrapper
+                          .album 
+                            img(src="/assets/images/album/02_prayer.png", alt="")
+                          p.album_ttl prayer
+                          .albam_link 
+                            .albam_link_icon 
+                              a(href="https://open.spotify.com/intl-ja/track/6OsvEWimF3N0u9DaYcp8s7?si=880e20aac5b6471a" target="_blank")
+                                img.pc(src="/assets/images/album/icon_spotify.png", alt="Spotify")
+                                img.sp(src="/assets/images/album/icon_spotify.png", alt="Spotify")
+                            .albam_link_icon 
+                              a(href="https://music.apple.com/jp/album/prayer-single/1687238385" target="_blank")
+                                img(src="/assets/images/album/icon_applemusic.png", alt="AppleMusic")
+                        .album_wrapper
+                          .album 
+                            img(src="/assets/images/album/03_place.png", alt="")
+                          p.album_ttl prayer
+                          .albam_link 
+                            .albam_link_icon 
+                              a(href="https://open.spotify.com/playlist/33CKYFw3S6JMeQbpKmt8Jd?si=472ae85f64084765" target="_blank")
+                                img.pc(src="/assets/images/album/icon_spotify.png", alt="Spotify")
+                                img.sp(src="/assets/images/album/icon_spotify.png", alt="Spotify")
+                            .albam_link_icon 
+                              a(href="https://music.apple.com/jp/artist/n-nulls/1476029519/see-all?section=singles" target="_blank")
+                                img(src="/assets/images/album/icon_applemusic.png", alt="AppleMusic")
+                        .album_wrapper
+                          .album 
+                            img(src="/assets/images/album/04_pastmelodies.png", alt="")
+                          p.album_ttl Past Melodies
+                          .albam_link 
+                            .albam_link_icon 
+                              a(href="https://open.spotify.com/intl-ja/album/42z0HucKH6eTI5ugxAGHcb?si=LOC_2mYiTtefkLo_z2-xHw" target="_blank")
+                                img.pc(src="/assets/images/album/icon_spotify.png", alt="Spotify")
+                                img.sp(src="/assets/images/album/icon_spotify.png", alt="Spotify")
+                            .albam_link_icon 
+                              a(href="https://music.apple.com/jp/album/past-melodies/1717023244" target="_blank")
+                                img(src="/assets/images/album/icon_applemusic.png", alt="AppleMusic")
+                        .album_wrapper
+                          .album 
+                            img(src="/assets/images/album/05_exist_in_the_mind.png", alt="")
+                          p.album_ttl exist in the mind
+                          .albam_link 
+                            .albam_link_icon 
+                              a(href="https://open.spotify.com/intl-ja/album/3oAUQT6sHm1DPJOrMOnP8r?si=YOjRPc_WRdiJ3SnJU4a2dg" target="_blank")
+                                img.pc(src="/assets/images/album/icon_spotify.png", alt="Spotify")
+                                img.sp(src="/assets/images/album/icon_spotify.png", alt="Spotify")
+                            .albam_link_icon 
+                              a(href="https://music.apple.com/jp/album/exist-in-the-mind-ep/1743351930" target="_blank")
+                                img(src="/assets/images/album/icon_applemusic.png", alt="AppleMusic")
+                        .album_wrapper
+                          .album 
+                            img(src="/assets/images/album/06_light.png", alt="")
+                          p.album_ttl light
+                          .albam_link 
+                            .albam_link_icon 
+                              a(href="https://open.spotify.com/intl-ja/album/4DwWCkzNtQ6dhd8MGtvdZP?si=kH0xhdFORQS-5RoTbJvN2Q" target="_blank")
+                                img.pc(src="/assets/images/album/icon_spotify.png", alt="Spotify")
+                                img.sp(src="/assets/images/album/icon_spotify.png", alt="Spotify")
+                            .albam_link_icon 
+                              a(href="https://music.apple.com/jp/album/light/1767565234?i=1767565448" target="_blank")
+                                img(src="/assets/images/album/icon_applemusic.png", alt="AppleMusic")
+                        .album_wrapper
+                          .album 
+                            img(src="/assets/images/album/07_for_you.png", alt="")
+                          p.album_ttl for you
+                          .albam_link 
+                            .albam_link_icon 
+                              a(href="https://open.spotify.com/album/1wA2lUp3tTttgp56SQX5wK?si=6QE501sSTvGpce8yA8ZRRA" target="_blank")
+                                img.pc(src="/assets/images/album/icon_spotify.png", alt="Spotify")
+                                img.sp(src="/assets/images/album/icon_spotify.png", alt="Spotify")
+                            .albam_link_icon 
+                              a(href="https://music.apple.com/jp/album/for-you-single/1767565146" target="_blank")
+                                img(src="/assets/images/album/icon_applemusic.png", alt="AppleMusic")
+                        .album_wrapper
+                          .album 
+                            img(src="/assets/images/album/08_song.png", alt="")
+                          p.album_ttl song
+                          .albam_link 
+                            .albam_link_icon 
+                              a(href="https://open.spotify.com/album/1Xb56W8wmuEZgNrArhLmRh?si=m8NLC0fpSveyzv_LEeff6A" target="_blank")
+                                img.pc(src="/assets/images/album/icon_spotify.png", alt="Spotify")
+                                img.sp(src="/assets/images/album/icon_spotify.png", alt="Spotify")
+                            .albam_link_icon 
+                              a(href="https://music.apple.com/jp/album/song/1767565525?i=1767565527" target="_blank")
+                                img(src="/assets/images/album/icon_applemusic.png", alt="AppleMusic")
+                        .album_wrapper
+                          .album 
+                            img(src="/assets/images/album/09_reverie.png", alt="")
+                          p.album_ttl reverie
+                          .albam_link 
+                            .albam_link_icon 
+                              a(href="https://open.spotify.com/intl-ja/album/1OplKXoktqRU0SjBbZlm1L?si=EKHcHnDKQV2MBWot4aUsdw" target="_blank")
+                                img.pc(src="/assets/images/album/icon_spotify.png", alt="Spotify")
+                                img.sp(src="/assets/images/album/icon_spotify.png", alt="Spotify")
+                            .albam_link_icon 
+                              a(href="https://music.apple.com/jp/album/reverie/1767565466?i=1767565467" target="_blank")
+                                img(src="/assets/images/album/icon_applemusic.png", alt="AppleMusic")
+                        .album_wrapper_dummy
+                button.modal_close.close_bottom close
+
+            // Modal 2
+            .modal#modal2
+              .modal_content
+                button.modal_close.close_top ×
+                .modal_body
+                  .modal_profile_detail 
+                    .modal_profile_pic01 
+                      img(src="/assets/images/artist_pic02_color.png", alt="")
+                    .modal_self_introduction_wrapper
+                      .modal_self_introduction
+                        p.modal_company_name N nulls
+                        p.modal_name_en Kyotaro Sawamura
+                        p.modal_name_jp 澤村 杏太朗
+                        //-.modal_profile_linkarea 
+                          .modal_icon
+                            a(href="" target="_blank") 
+                              img(src="/assets/images/icon_web.png", alt="")
+                          .modal_icon
+                            a(href="" target="_blank") 
+                              img(src="/assets/images/icon_x.png", alt="")
+                          .modal_icon
+                            a(href="" target="_blank") 
+                              img(src="/assets/images/icon_instagram.png", alt="")
+                          .modal_icon
+                            a(href="" target="_blank") 
+                              img(src="/assets/images/icon_facebook.png", alt="")
+                  .modal_textarea 
+                    .modal_textarea_en_wrapper 
+                      p.modal_profile_ttl_en Profile
+                      p.modal_profile_text_en Born in Chiba, Japan.
+                        br
+                        | After graduating from the Department of Conducting at Tokyo University of the Arts, he studied conducting at the “Giuseppe Verdi” Conservatory in Milan, Italy, graduating in 2022 with the highest marks.
+                        br
+                        | He was mentored by Masanori Mikawa, Ken Takaseki, Kazufumi Yamashita, and Vittorio Parisii and attended master classes taught by Ryusuke Numajiri, Daniele Gatti, and Fabio Luisi to further his skills.
+                        br
+                        | In 2019, he participated in several performances at the New National Theatre, Tokyo as an assistant conductor.
+                        br
+                        | In 2021, he won the top prize at the 9th Luigi Mancinelli International Opera Conducting Competition.
+                        br
+                        | He then conducted a new opera performance at Teatro Coccia (Novara) as a supplementary prize.
+                        br
+                        | In 2022, he received the Ichikawa City Culture and Arts Encouragement Award.
+                        br
+                        | In 2023, he attended Riccardo Muti’s course at the Spring Festival in Tokyo, after winning a competitive audition that attracted applicants worldwide.
+                        br
+                        | So far, he has performed with the New Japan Philharmonic, the Tokyo Philharmonic Orchestra, the Gunma Symphony Orchestra, and others.
+                        br
+                        | With a wide musical background in both symphonic and operatic fields, he is highly regarded by performers and audiences for his music-making centering his unique rich musical expressions.
+                    .modal_textarea_jp_wrapper 
+                      p.modal_profile_ttl_jp プロフィール
+                      p.modal_profile_text_jp 千葉県出身。東京藝術大学指揮科を卒業後、イタリア・ミラノ音楽院 “ジュゼッペ・ヴェルディ” で指揮を学び、2022年に最高点＋の成績で卒業。
+                        br
+                        | 三河正典、高関 健、山下一史、ヴィットーリオ・パリージらに師事したほか、沼尻竜典、ダニエレ・ガッティ、ファビオ・ルイージらのマスタークラスで研鑽を積む。
+                        br
+                        | 2019年、新国立劇場にて副指揮者として複数公演に参加。
+                        br
+                        | 2021年、第9回 ルイージ・マンチネッリ国際オペラ指揮者コンクール第一位。
+                        br
+                        | 副賞としてテアトロ・コッチャ(ノヴァーラ)で新作オペラ公演を指揮。
+                        br
+                        | 2022年、市川市文化芸術奨励賞を受賞。
+                        br
+                        | 2023年、東京・春・音楽祭にて、世界中から参加希望者が集まるオーディションを突破し、リッカルド・ムーティの講習会を受講。
+                        br
+                        | これまで、新日本フィルハーモニー交響楽団、東京フィルハーモニー交響楽団、群馬交響楽団等と共演。
+                        br
+                        | 交響曲とオペラ、両方の分野に広いレパートリーを持ち、豊かな歌心を軸にした音楽づくりが、共演者や聴衆から高い評価を得ている。 
+                    .modal_release_wrapper
+                      p.modal_release_ttl Release
+                      .release_area
+                        .album_wrapper
+                          .album 
+                            img(src="/assets/images/album/01_far_away.png", alt="Far away")
+                          p.album_ttl Far away
+                          .albam_link 
+                            .albam_link_icon 
+                              a(href="https://open.spotify.com/playlist/6bvazyItouIlM0kKHjKU0R?si=0709d28911704c1f" target="_blank")
+                                img.pc(src="/assets/images/album/icon_spotify.png", alt="Spotify")
+                                img.sp(src="/assets/images/album/icon_spotify.png", alt="Spotify")
+                            .albam_link_icon 
+                              a(href="https://music.apple.com/jp/artist/n-nulls/1476029519/see-all?section=singles" target="_blank")
+                                img(src="/assets/images/album/icon_applemusic.png", alt="AppleMusic")
+                        .album_wrapper
+                          .album 
+                            img(src="/assets/images/album/02_prayer.png", alt="")
+                          p.album_ttl prayer
+                          .albam_link 
+                            .albam_link_icon 
+                              a(href="https://open.spotify.com/intl-ja/track/6OsvEWimF3N0u9DaYcp8s7?si=880e20aac5b6471a" target="_blank")
+                                img.pc(src="/assets/images/album/icon_spotify.png", alt="Spotify")
+                                img.sp(src="/assets/images/album/icon_spotify.png", alt="Spotify")
+                            .albam_link_icon 
+                              a(href="https://music.apple.com/jp/album/prayer-single/1687238385" target="_blank")
+                                img(src="/assets/images/album/icon_applemusic.png", alt="AppleMusic")
+                        .album_wrapper
+                          .album 
+                            img(src="/assets/images/album/03_place.png", alt="")
+                          p.album_ttl prayer
+                          .albam_link 
+                            .albam_link_icon 
+                              a(href="https://open.spotify.com/playlist/33CKYFw3S6JMeQbpKmt8Jd?si=472ae85f64084765" target="_blank")
+                                img.pc(src="/assets/images/album/icon_spotify.png", alt="Spotify")
+                                img.sp(src="/assets/images/album/icon_spotify.png", alt="Spotify")
+                            .albam_link_icon 
+                              a(href="https://music.apple.com/jp/artist/n-nulls/1476029519/see-all?section=singles" target="_blank")
+                                img(src="/assets/images/album/icon_applemusic.png", alt="AppleMusic")
+                        .album_wrapper
+                          .album 
+                            img(src="/assets/images/album/04_pastmelodies.png", alt="")
+                          p.album_ttl Past Melodies
+                          .albam_link 
+                            .albam_link_icon 
+                              a(href="https://open.spotify.com/intl-ja/album/42z0HucKH6eTI5ugxAGHcb?si=LOC_2mYiTtefkLo_z2-xHw" target="_blank")
+                                img.pc(src="/assets/images/album/icon_spotify.png", alt="Spotify")
+                                img.sp(src="/assets/images/album/icon_spotify.png", alt="Spotify")
+                            .albam_link_icon 
+                              a(href="https://music.apple.com/jp/album/past-melodies/1717023244" target="_blank")
+                                img(src="/assets/images/album/icon_applemusic.png", alt="AppleMusic")
+                        .album_wrapper
+                          .album 
+                            img(src="/assets/images/album/05_exist_in_the_mind.png", alt="")
+                          p.album_ttl exist in the mind
+                          .albam_link 
+                            .albam_link_icon 
+                              a(href="https://open.spotify.com/intl-ja/album/3oAUQT6sHm1DPJOrMOnP8r?si=YOjRPc_WRdiJ3SnJU4a2dg" target="_blank")
+                                img.pc(src="/assets/images/album/icon_spotify.png", alt="Spotify")
+                                img.sp(src="/assets/images/album/icon_spotify.png", alt="Spotify")
+                            .albam_link_icon 
+                              a(href="https://music.apple.com/jp/album/exist-in-the-mind-ep/1743351930" target="_blank")
+                                img(src="/assets/images/album/icon_applemusic.png", alt="AppleMusic")
+                        .album_wrapper
+                          .album 
+                            img(src="/assets/images/album/06_light.png", alt="")
+                          p.album_ttl light
+                          .albam_link 
+                            .albam_link_icon 
+                              a(href="https://open.spotify.com/intl-ja/album/4DwWCkzNtQ6dhd8MGtvdZP?si=kH0xhdFORQS-5RoTbJvN2Q" target="_blank")
+                                img.pc(src="/assets/images/album/icon_spotify.png", alt="Spotify")
+                                img.sp(src="/assets/images/album/icon_spotify.png", alt="Spotify")
+                            .albam_link_icon 
+                              a(href="https://music.apple.com/jp/album/light/1767565234?i=1767565448" target="_blank")
+                                img(src="/assets/images/album/icon_applemusic.png", alt="AppleMusic")
+                        .album_wrapper
+                          .album 
+                            img(src="/assets/images/album/07_for_you.png", alt="")
+                          p.album_ttl for you
+                          .albam_link 
+                            .albam_link_icon 
+                              a(href="https://open.spotify.com/album/1wA2lUp3tTttgp56SQX5wK?si=6QE501sSTvGpce8yA8ZRRA" target="_blank")
+                                img.pc(src="/assets/images/album/icon_spotify.png", alt="Spotify")
+                                img.sp(src="/assets/images/album/icon_spotify.png", alt="Spotify")
+                            .albam_link_icon 
+                              a(href="https://music.apple.com/jp/album/for-you-single/1767565146" target="_blank")
+                                img(src="/assets/images/album/icon_applemusic.png", alt="AppleMusic")
+                        .album_wrapper
+                          .album 
+                            img(src="/assets/images/album/08_song.png", alt="")
+                          p.album_ttl song
+                          .albam_link 
+                            .albam_link_icon 
+                              a(href="https://open.spotify.com/album/1Xb56W8wmuEZgNrArhLmRh?si=m8NLC0fpSveyzv_LEeff6A" target="_blank")
+                                img.pc(src="/assets/images/album/icon_spotify.png", alt="Spotify")
+                                img.sp(src="/assets/images/album/icon_spotify.png", alt="Spotify")
+                            .albam_link_icon 
+                              a(href="https://music.apple.com/jp/album/song/1767565525?i=1767565527" target="_blank")
+                                img(src="/assets/images/album/icon_applemusic.png", alt="AppleMusic")
+                        .album_wrapper
+                          .album 
+                            img(src="/assets/images/album/09_reverie.png", alt="")
+                          p.album_ttl reverie
+                          .albam_link 
+                            .albam_link_icon 
+                              a(href="https://open.spotify.com/intl-ja/album/1OplKXoktqRU0SjBbZlm1L?si=EKHcHnDKQV2MBWot4aUsdw" target="_blank")
+                                img.pc(src="/assets/images/album/icon_spotify.png", alt="Spotify")
+                                img.sp(src="/assets/images/album/icon_spotify.png", alt="Spotify")
+                            .albam_link_icon 
+                              a(href="https://music.apple.com/jp/album/reverie/1767565466?i=1767565467" target="_blank")
+                                img(src="/assets/images/album/icon_applemusic.png", alt="AppleMusic")
+                        .album_wrapper_dummy
+                button.modal_close.close_bottom close
+
+            // Modal 3
+            .modal#modal3
+              .modal_content
+                button.modal_close.close_top ×
+                .modal_body
+                  .modal_profile_detail 
+                    .modal_profile_pic01 
+                      img(src="/assets/images/artist_pic03_color.png", alt="")
+                    .modal_self_introduction_wrapper
+                      .modal_self_introduction
+                        //-p.modal_company_name N nulls
+                        p.modal_name_en THY
+                        p.modal_name_jp ザイ
+                        //-.modal_profile_linkarea 
+                          .modal_icon
+                            a(href="" target="_blank") 
+                              img(src="/assets/images/icon_web.png", alt="")
+                          .modal_icon
+                            a(href="" target="_blank") 
+                              img(src="/assets/images/icon_x.png", alt="")
+                          .modal_icon
+                            a(href="" target="_blank") 
+                              img(src="/assets/images/icon_instagram.png", alt="")
+                          .modal_icon
+                            a(href="" target="_blank") 
+                              img(src="/assets/images/icon_facebook.png", alt="")
+                  .modal_textarea 
+                    .modal_textarea_en_wrapper 
+                      p.modal_profile_ttl_en Profile
+                      p.modal_profile_text_en Graduated from the Department of Architecture, Faculty of Engineering at the University of Tokyo, and later also graduated from the Department of Composition, Faculty of Music at the Tokyo University of the Arts.
+                        br
+                        | Composed “Yosakoi” and “Mihara Yassa” for alto saxophone and piano, “Kompira Funafune” for saxophone quartet, and “Nanbu Ushi Oi Uta” for euphonium and piano on NHK-FM’s “Hibiki: The Wind Music Program”.
+                        br
+                        | Commissioned work for recorder quartet by Minoru Yoshizawa, “Aru Nemuri No Naka Deno Koto(Once in a Dream)”, published by Vorn Musik.
+                        br
+                        | Published a two-part chorus version of “Sweet Memories” for female voices in the magazine “Hanna”.
+                        br
+                        | While attending the University of Tokyo, he won a special prize in the piano section of the Kanagawa Music Competition for Senior Pianists and a special jury prize at the Tokyo International Art Association Newcomer Audition.
+                        br
+                        | He is currently active in both composition and performance.
+                    .modal_textarea_jp_wrapper 
+                      p.modal_profile_ttl_jp プロフィール
+                      p.modal_profile_text_jp 東京大学工学部建築学科卒業ののち、東京藝術大学音楽学部作曲科卒業。
+                        br
+                        | NHK-FM「吹奏楽のひびき」において、アルトサクソフォンとピアノのための『よさこい』『三原ヤッサ』
+                        br
+                        | サックス四重奏曲『金比羅船船』ユーフォニアムとピアノのための『南部牛追歌』を発表。
+                        br
+                        | 吉沢実委嘱作品 リコーダー四重奏曲『或る眠りの中でのこと』をVorn Musikより出版。
+                        br
+                        | 女声二部合唱版『Sweet Memories』を雑誌「ハンナ」に掲載。
+                        br
+                        | 東京大学在学時にかながわ音楽コンクールシニアピアノ部門特選、東京国際芸術協会新人オーディション審査員特別賞受賞。
+                        br
+                        | 作編曲、演奏の両面で活動中。
+                button.modal_close.close_bottom close
+            // Modal 4
+            .modal#modal4
+              .modal_content
+                button.modal_close.close_top ×
+                .modal_body
+                  .modal_profile_detail 
+                    .modal_profile_pic01 
+                      img(src="/assets/images/artist_pic04_color.png", alt="")
+                    .modal_self_introduction_wrapper
+                      .modal_self_introduction
+                        p.modal_company_name Ken and 7
+                        p.modal_name_en Kenshiro Matsuo
+                        p.modal_name_jp 松尾 賢志郎
+                        .modal_profile_linkarea 
+                          .modal_icon
+                            a(href="" target="_blank") 
+                              img(src="/assets/images/icon_web.png", alt="")
+                          .modal_icon
+                            a(href="" target="_blank") 
+                              img(src="/assets/images/icon_x.png", alt="")
+                          .modal_icon
+                            a(href="" target="_blank") 
+                              img(src="/assets/images/icon_instagram.png", alt="")
+                          .modal_icon
+                            a(href="" target="_blank") 
+                              img(src="/assets/images/icon_facebook.png", alt="")
+                  .modal_textarea 
+                    .modal_textarea_en_wrapper 
+                      p.modal_profile_ttl_en Profile
+                      p.modal_profile_text_en Graduated from the Composition Department of Kunitachi College of Music after attending Kunitachi College of Music Senior High School.
+                        br
+                        | Mentored by Hiroshi Aoshima and Keiichi Morigaki in composition.
+                        br
+                        | He has published numerous works, mainly arrangements, from Zen Ongaku Publishing and Kawai Publishing.
+                        br
+                        | In 2020, he conducted, scored, and taught music for NHK’s TV series “Yale” and also made an appearance in the role of conductor.
+                        br
+                        | In 2022, he won the Yale prize for the 1st Fukushima City Yuji Koseki Composition Competition, “Natsukashi No Daichi E!(To the Nostalgic Land!)” (Tida Publishing).
+                        br
+                        | In 2023, he was recognized for excellent work on “Symphonic Poem ‘Okinawa’” (Tida Publishing), a public contest for wind band music on the theme of Okinawa, sponsored by the C→Brass Wind Orchestra.
+                        br
+                        | In 2024, he was selected for the 12th JFC Composition Award Competition.
+                        br
+                        | He also won second prize at the 2nd Fukushima City Yuji Koseki Composition Competition for “Ashita No Shinwa(Myth of Tomorrow)” (Tida Publishing Co., Ltd.).
+                        br
+                        | Member of the Japan Council of Composers.
+                        br
+                        | Since 2018, he has been composing pieces ranging between 30 seconds to 1 minute long for #1-song-a-day-everyday-composition-challenge and posting them daily on social media and YouTube. 
+                        a(href="https://kenshiromatsuo.jimdofree.com" target="_blank") https://kenshiromatsuo.jimdofree.com
+                        br
+                        br
+                        | ［Musical History]
+                        br
+                        | He grew up listening to Queen, The Beatles, Led Zeppelin, Motley Crue, Gary Moore, Novella, Yin-Yang-Za, and Sex Machine Guns through his parents’ influence and was especially fascinated by Queen, who awakened his passion for music.
+                        br
+                        | He suddenly developed an interest in classical music at the age of 10 and taught himself to play Chopin’s “Revolution”.
+                        br
+                        | He then started to dream of composing his own piano concerto just like Rachmaninoff.
+                        br
+                        | In junior high school, he listened to Toru Takemitsu’s “November Steps” on a daily basis which broadened his interest in Takemitsu’s choral and film works, which are also tonal in nature.
+                        br
+                        | Although he loved large late-Romantic works by Wagner, Mahler, and R. Strauss, popular music such as Sukanchi, aiko, and L’Arc~en~Ciel was also a favorite of his in high school.
+                        br
+                        | In college, he found interest in the Hollywood music of Korngold.
+                        br
+                        | Having grown up interested in a wide variety of music in this way, he now creates music across multiple genres.
+                        br
+                        | His favorite painting is “Ashita No Shinwa(Myth of Tomorrow)” by Taro Okamoto.
+                        br
+                      p.modal_profile_text_jp Kenshiro Matsuo's wind ensemble works are now available for purchase from Tiida Publishing!
+                        br
+                        | "Myth of Tomorrow"［
+                        a(href="https://youtu.be/ZZZo7Zc81H8?si=L-cg2pRrsCi50l0A" target="_blank") YouTube
+                        | ］［
+                        a(href="https://alicemusic.shop-pro.jp/?pid=183865946" target="_blank") Sheet Music
+                        | ]
+                        br
+                        | "To the Nostalgic Land!"［
+                        a(href="https://youtu.be/_9FIt2JF9KA?si=9QI8AzUeKpYdPMGL" target="_blank") YouTube
+                        | ］［
+                        a(href="https://alicemusic.shop-pro.jp/?pid=180272941" target="_blank") Sheet Music
+                        | ]
+                        br
+                        | Symphonic Poem "Okinawa"［
+                        a(href="https://youtu.be/ikSYO2Ctvws?si=Achl8cV8lWgtLQt1" target="_blank") YouTube
+                        | ］［
+                        a(href="https://alicemusic.shop-pro.jp/?pid=17987349" target="_blank") Sheet Music
+                        | ]
+                    .modal_textarea_jp_wrapper 
+                      p.modal_profile_ttl_jp プロフィール
+                      p.modal_profile_text_jp 国立音楽大学附属高等学校を経て、国立音楽大学作曲科卒業。
+                        br
+                        | 作曲を青島広志、森垣桂一各氏に師事。
+                        br
+                        | 全音楽譜出版社、カワイ出版より編曲作品を中心に多数出版している。
+                        br
+                        | 2020年NHK連続テレビ小説「エール」にて指揮・譜面・音楽指導を行いまた、指揮者役としても出演した。
+                        br
+                        | 2022年第一回福島市古関裕而作曲コンクール「懐かしの大地へ！」(ティーダ出版)エール賞受賞。
+                        br
+                        | 2023年一般社団法人C→BRASSウインドオーケストラ主催沖縄をテーマにした吹奏楽曲公募「交響詩”沖縄”」(ティーダ出版)優秀作品。
+                        br
+                        | 2024年第12回JFC作曲賞コンクール入選。
+                        br
+                        | 第二回福島市古関裕而作曲コンクール「明日の神話」(ディータ出版)第2位受賞など。
+                        br
+                        | 日本作曲家協議会 会員。
+                        br
+                        | 2018年より#1日1曲毎日作曲チャレンジという約30秒～1分の楽曲を作曲し、SNS、YouTubeに毎日投稿している。
+                        a(href="https://kenshiromatsuo.jimdofree.com" target="_blank") https://kenshiromatsuo.jimdofree.com
+                        br
+                        br
+                        | ［音楽遍歴］
+                        br
+                        | 幼少期より両親の影響で、クイーン、ビートルズ、レッドツェッペリン、モトリー・クルー、ゲイリームーア、ノヴェラ、陰陽座、セックス マシンガンズを聴いて育ち、特にクイーンに心酔し音楽に目覚める。10歳を超えたあたりから唐突にクラシック音楽に目覚め、ショパンの「革命」を独学で弾けるようになる。そしてラフマニノフと同じように自分もピアノ協奏曲を自作自演したいという夢を抱く。中学生になると武満徹の「ノヴェンバーステップス」を毎日のように聴き、また彼の合唱曲や映画作品といった調性作品などにも興味を持つ。高校に進学してからはワーグナー やマーラー、R.シュトラウスといった後期ロマン派の大編成の作品を好む一方、すかんちやaiko、L’Arc～en～Cielといったポピュラー音楽もマイブームだった。
+                        br
+                        | 大学生になってからはコルンゴルトのハリウッド音楽に興味を持つ。このように様々な音楽に興味を持って育ったため、多ジャンルの音楽を作っている。好きな絵画は、岡本太郎の「明日の神話」
+                        br
+                      p.modal_profile_text_jp 松尾賢志郎吹奏楽曲、ティーダ出版より好評発売中！
+                        br
+                        | ・明日の神話［
+                        a(href="https://youtu.be/ZZZo7Zc81H8?si=L-cg2pRrsCi50l0A" target="_blank") YouTube
+                        | ］［
+                        a(href="https://alicemusic.shop-pro.jp/?pid=183865946" target="_blank") 楽譜
+                        | ]
+                        br
+                        | ・懐かしの大地へ！［
+                        a(href="https://youtu.be/_9FIt2JF9KA?si=9QI8AzUeKpYdPMGL" target="_blank") YouTube
+                        | ］［
+                        a(href="https://alicemusic.shop-pro.jp/?pid=180272941" target="_blank") 楽譜
+                        | ]
+                        br
+                        | ・交響詩「沖縄」［
+                        a(href="https://youtu.be/ikSYO2Ctvws?si=Achl8cV8lWgtLQt1" target="_blank") YouTube
+                        | ］［
+                        a(href="https://alicemusic.shop-pro.jp/?pid=179873491" target="_blank") 楽譜
+                        | ]
+                button.modal_close.close_bottom close
+            // Modal 5
+            .modal#modal5
+              .modal_content
+                button.modal_close.close_top ×
+                .modal_body
+                  .modal_profile_detail 
+                    .modal_profile_pic01 
+                      img(src="/assets/images/artist_pic05_color.png", alt="")
+                    .modal_self_introduction_wrapper
+                      .modal_self_introduction
+                        //-p.modal_company_name N nulls
+                        p.modal_name_en Taichi Chishaki
+                        p.modal_name_jp 樗木 太一
+                        //-.modal_profile_linkarea 
+                          .modal_icon
+                            a(href="" target="_blank") 
+                              img(src="/assets/images/icon_web.png", alt="")
+                          .modal_icon
+                            a(href="" target="_blank") 
+                              img(src="/assets/images/icon_x.png", alt="")
+                          .modal_icon
+                            a(href="" target="_blank") 
+                              img(src="/assets/images/icon_instagram.png", alt="")
+                          .modal_icon
+                            a(href="" target="_blank") 
+                              img(src="/assets/images/icon_facebook.png", alt="")
+                  .modal_textarea 
+                    .modal_textarea_en_wrapper 
+                      p.modal_profile_ttl_en Profile
+                      p.modal_profile_text_en Taichi Chishaki is a composer, pianist from Tokyo, Japan. He started playing the piano at the age of 6.
+                        br
+                        | When he was young, he had many opportunities to come into contact with Japanese traditional music through “Noh” (a form of Japanese traditional theater) which his grandfather performed.
+                        br
+                        | He started composing classical music at the age of 18 and entered Tokyo University of the Arts.
+                        br
+                        | In college, he produced contemporary classical music and was also involved in film music.
+                        br
+                        | He can write anything from piano pieces to orchestral pieces.
+                        br
+                        | From 2021, he started releasing his own piano pieces on various music platforms.
+                        br
+                        | In composing, he places the most importance on simple melodies and sound reverberations, and specializes in works that incorporate classical music composition methods.
+                        br
+                        | He is influenced by L.V.Beethoven, D.Shostakovich, and Ryuichi Sakamoto.
+                        br
+                        br
+                        | In 2023, “Harmonism I” was released under the label of “1631 Recordings”. 
+                        br
+                        | On Christmas Day, 2024, “The Garden” was released by the first Japanese label dedicated to post-classical music, “<span class="ls_01">NEXTVIEW</span> Labels”.
+                    .modal_textarea_jp_wrapper 
+                      p.modal_profile_ttl_jp プロフィール
+                      p.modal_profile_text_jp 東京出身。作曲家、ピアニスト。6歳からピアノを、18歳の時に作曲を始める。東京藝術大学音楽学部作曲科卒業。小さい頃、祖父が「能」を学んでいたため、日本の伝統音楽を身近に聴きながら育った。18歳からクラシック音楽の作曲を始め、大学時代は現代クラシック音楽を主に制作、映像音楽にも携わっていた。ピアノ作品からオーケストラ作品まで幅広く作曲する。2021年から自身のピアノ曲をリリースし始める。単純な旋律と音の響きを作曲する上での主題にしており、クラシック音楽の作曲法を取り入れた作品を得意とする。影響を受けた作曲家はベートーベン、ショスタコービッチ、坂本龍一である。<br><br>2023年、1631Recordingsから「Harmonism Ⅰ」を発表。<br>2024年クリスマス、日本で初めてのポストクラシカル専門レーベル「<span class="ls_01">NEXTVIEW</span> Labels」から「The Garden」をリリース。
+                    .modal_release_wrapper
+                      p.modal_release_ttl Release
+                      .release_area
+                        .album_wrapper
+                          .album 
+                            img(src="/assets/images/album/10_the_garden.png", alt="")
+                          p.album_ttl The Garden
+                          .albam_link 
+                            .albam_link_icon 
+                              a(href="https://open.spotify.com/intl-ja/artist/1JNnDWgUDZJvOO6wAqfIUJ?si=pYytUt4XRVaWhtA4P7vFZg" target="_blank")
+                                img.pc(src="/assets/images/album/icon_spotify.png", alt="Spotify")
+                                img.sp(src="/assets/images/album/icon_spotify.png", alt="Spotify")
+                            .albam_link_icon 
+                              a(href="https://music.apple.com/jp/artist/taichi-chishaki/1447844138" target="_blank")
+                                img(src="/assets/images/album/icon_applemusic.png", alt="AppleMusic")
+                        .album_wrapper_dummy
+                button.modal_close.close_bottom close
+            .artist_area_dummy
+          //-.btn01_wrapper
+            a.btn01.btn01_last(href="//" target="_blank") + MORE
+      .message_wrapper#message
+        .message_bg
+          section.message
+            h2.top_ttl.text_white Message
+            .section_message_contents_wrapper
+              .message_textarea
+                p.message_text01_en As the founder of “<span class="ls_01">NEXTVIEW</span> Labels,” Japan’s pioneering post-classical music label, my mission is to craft groundbreaking works that push beyond conventional genre boundaries. <br class="sp">I deeply respect the distinct character of each artist and embrace their unrestrained expression, which mirrors their individual viewpoints and artistic sensibilities. My vision is to cultivate a fresh musical movement in the post-classical realm that strikes a chord with audiences. It’s my sincere hope that through our post-classical creations, we can introduce novel emotional experiences to the world, originating from Japan. Driven by this ambition, I remain dedicated to producing music of the highest caliber. 
+                  span.message_span <span class="ls_01">NEXTVIEW</span> Labels<br>Executive producer  Jamie Nakamura
+                p.message_text01_jp 私は、日本で初めてのポストクラシカル専門レーベル「<span class="ls_01">NEXTVIEW</span> Labels」のプロデューサーとして、既存のジャンルにとらわれず、革新的な作品を生み出していきたいと考えています。<br>アーティストの個性を尊重し、一人ひとりの視点や感性を反映した自由な表現を大切に、新しい潮流の音楽（ポストクラシカル）を生み出していきたいと思っています。<br>日本から、私たちが生み出すポストクラシカルミュージックで、全世界に、新たな感動を与えられたら……<br>そんな思いで、最高の音楽を作り続けいたいと思っています。
+                  span.message_span <span class="ls_01">NEXTVIEW</span> Labels<br>エグゼクティブプロデューサー　Jamie Nakamura
+      .news_wrapper
+        section.news#news
+          h2.top_ttl NEWS
+          .news_container
+            .news_list
+              .news_item
+                p.news_date 2025.01.02
+                .news_title_text 
+                  p.news_description <a  class="news_title" href="https://prtimes.jp/main/html/rd/p/000000129.000030962.html" target="_blank"><span class="ls_01">ポスト・クラシックの新星、「N nulls（ヌルズ）」が新曲『Far away』を配信リリース！</span></a>
+              //-.news_item
+                p.news_date 2025.01.02
+                .news_title_text 
+                  p.news_description <a  class="news_title" href="" target="_blank">News Title <span class="ls_01">NEXTVIEW</span> Labels is dedicated to breathing new life into classical music, focusing on the ambient, chill, and post-classical genres. While we hold traditional classical music in high regard, we’re not afraid to push its boundaries, constantly striving to create innovative and fresh musical styles.</a><br class="pc">ニュースタイトルが入ります。ニュースタイトルが入ります。ニュースタイトルが入ります。ニュースタイトルが入ります。ニュースタイトルが入ります。ニュースタイトルが入ります。ニュースタイトルが入ります。
+              //-.news_item
+                p.news_date 2025.01.02
+                .news_title_text 
+                  p.news_description <a  class="news_title" href="" target="_blank">News Title <span class="ls_01">NEXTVIEW</span> Labels is dedicated to breathing new life into classical music, focusing on the ambient, chill, and post-classical genres. While we hold traditional classical music in high regard, we’re not afraid to push its boundaries, constantly striving to create innovative and fresh musical styles.</a><br>ニュースタイトルが入ります。ニュースタイトルが入ります。ニュースタイトルが入ります。ニュースタイトルが入ります。ニュースタイトルが入ります。ニュースタイトルが入ります。ニュースタイトルが入ります。
+      .corporate_profile_wrapper
+        section.corporate_profile#corporateprofile
+          h2.top_ttl Corporate profile
+          .company_info_en_wrapper
+            .company_info
+              .company_border
+                .border_white
+                .border_spacing
+                .border_black
+              .company_details
+                .company_row
+                  p.company_label Company name
+                  p.company_value <span class="ls_01">NEXTVIEW</span> Co. Ltd.
+                .company_row
+                  p.company_label Head office
+                  p.company_value #4503, 4-20-2 Shibaura Minato-ku, <br class="sp">Tokyo 1080023, Japan
+                .company_row
+                  p.company_label URL
+                  p.company_value 
+                    a(href="http://www.nextview.me" target="_blank") www.nextview.me
+                .company_row
+                  p.company_label Founded
+                  p.company_value 10th November, 2020
+                .company_row
+                  p.company_label CEO
+                  p.company_value Makoto Eguchi
+                .company_row
+                  p.company_label Services
+                  p.company_value 
+                    | Record label business for planning, production, promotion, and distribution of music software
+                    br
+                    | Live event production
+                    br
+                    | Consulting business for music and video distribut
+          .company_info_jp_wrapper
+            .company_info
+              .company_border
+                .border_white
+                .border_spacing
+                .border_black
+              .company_details
+                .company_row
+                  p.company_label 運営会社
+                  p.company_value 株式会社<span class="ls_01">NEXTVIEW</span>
+                .company_row
+                  p.company_label 本社
+                  p.company_value 〒108-0023 東京都港区芝浦4-20-2-4503
+                .company_row
+                  p.company_label URL
+                  p.company_value 
+                    a(href="http://www.nextview.me" target="_blank") www.nextview.me
+                .company_row
+                  p.company_label 設立
+                  p.company_value 2020年11月10日
+                .company_row
+                  p.company_label 代表者
+                  p.company_value 江口 誠
+                .company_row
+                  p.company_label 業務内容
+                  p.company_value 音楽ソフトの企画・制作・PR・流通を行うレーベル事業<br>ライブ制作事業<br>音楽配信、映像配信のコンサルタント事業
+        script(src='https://cdnjs.cloudflare.com/ajax/libs/scrollify/1.0.21/jquery.scrollify.min.js')
+        script(src='http://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/move02/6-1/js/6-1.js')
+      .contact_wrapper
+        section.contact#contact
+          h2.top_ttl.contact_ttl Contact
+          .contact_form_wrapper
+            .contact-form
+              .contact-form-left
+                .form-group
+                  label(for="company-name") Company name
+                  input#company-name(type="text" name="company-name" placeholder="Enter your company name")
+                .form-group
+                  label(for="name") <span class="text_inline">Name</span>
+                    span.required *Required
+                  input#name(type="text" name="name" placeholder="Enter your name" required)
+                .form-group
+                  label(for="email") <span class="text_inline">E-Mail</span>
+                    span.required *Required
+                  input#email(type="email" name="email" placeholder="Enter your email" required)
+                .form-group
+                  label(for="phone") Phone Number
+                  input#phone(type="tel" name="phone" placeholder="Enter your phone number")
+                .form-group
+                  label(for="website-url") Website URL
+                  input#website-url(type="url" name="website-url" placeholder="Enter your website URL")
+              .contact-form-right
+                .form-group
+                  label(for="message") <span class="text_inline">Message</span>
+                    span.required *Required
+                  textarea#message(name="message" placeholder="Enter your message" required)
+                .form-group.recaptcha
+                  div.g-recaptcha(data-sitekey="YOUR_SITE_KEY")
+                .form-group
+                  button.confirm-btn(type="submit") Confirm
+      footer 
+        p.footer_text © 2024 NEXTVIEW Co.,LTD.

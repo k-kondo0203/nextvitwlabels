@@ -1,0 +1,120 @@
+@charset "utf-8";
+
+/*========= レイアウトのためのCSS ===============*/
+
+#header {
+  padding: 40px;
+  //-background: #666;
+  color: #fff;
+  text-align: center;
+}
+
+.box {
+  color: #fff;
+  padding: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  @include sp{
+    padding: 0vw;
+  }
+}
+
+#box1 {
+  background: #fff;
+}
+
+#box2 {
+  background: #fff;
+  position: relative;
+}
+#box2.box {
+  color: #000;
+}
+#box3 {
+  background: #888;
+}
+
+#box4 {
+  background: #000;
+}
+
+#footer {
+  background: #333;
+  color: #fff;
+  padding: 40px;
+  text-align: center;
+
+  a {
+    color: #fff;
+  }
+}
+
+/*========= ページネーションCSS ===============*/
+
+.pagination {
+  position: fixed;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1em;
+  z-index: 10;
+  list-style: none;
+  @include sp{
+    right: 1.4vw;
+  }
+
+  a {
+    display: block;
+    height: 20px;
+    margin-bottom: 5px;
+    color: #000;
+    position: relative;
+    padding: 4px;
+    @include sp{
+      margin-bottom: 0;
+    }
+
+    &.active:after {
+      box-shadow: inset 0 0 0 5px;
+    }
+
+    .hover-text {
+      display: none;
+    }
+
+    &:hover .hover-text {
+      opacity: 1;
+    }
+
+    &:after {
+      -webkit-transition: box-shadow 0.5s ease;
+      transition: box-shadow 0.5s ease;
+      width: 10px;
+      height: 10px;
+      display: block;
+      border: 1px solid;
+      border-radius: 50%;
+      content: "";
+      position: absolute;
+      margin: auto;
+      top: 0;
+      right: 3px;
+      bottom: 0;
+      @include sp{
+        width: 1.6vw;
+        height: 1.6vw;
+      }
+    }
+  }
+}
+
+/*現在地表示のテキストの設定*/
+
+/*768px以下は現在地表示のテキストを非表示*/
+@media screen and (max-width: 768px) {
+  .pagination a .hover-text {
+    display: none;
+  }
+}
